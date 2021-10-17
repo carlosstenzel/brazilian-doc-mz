@@ -1,0 +1,8 @@
+{
+
+    "menuItemOpenSidebar": {
+      "message": "Open sidebar",
+      "description": "Title of context menu item that opens a sidebar."
+    }
+  
+  }

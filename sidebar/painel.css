@@ -1,0 +1,16 @@
+body {
+
+}
+
+.box {
+    margin-top: 5%;
+    position: absolute;
+    width: 91%;
+    margin-left: 3%;
+    padding: 3%;
+    background: #fff;
+}
+
+#compyNumber {
+    margin-left: 5px;
+}
