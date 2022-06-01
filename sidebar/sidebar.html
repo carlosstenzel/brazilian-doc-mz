@@ -1,40 +1,115 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="painel.css" />
-  </head>
-  <body>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 4px;
+        }
+
+        .feedback-container {
+            min-height: 1rem;
+        }
+
+        .input-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .d-flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .d-flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .d-flex-row-center {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .d-flex-column-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .d-flex-column-center-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* inline*/
+        .d-flex-inline {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
     <div class="box">
-      <form name="form_main">
-        <label for="numero">Number:</label><br />
-        <input name="numero" id="numero" size="20" type="text" /> <button id='copyNumber'>Copy</button><br /><br />
-        Type:
-        <input
-          name="tipo"
-          value="cpf"
-          id="cpf"
-          checked="checked"
-          type="radio"
-        />
-        <label for="cpf">CPF</label>
-        <input name="tipo" value="cnpj" id="cnpj" type="radio" />
-        <label for="cnpj">CNPJ</label>
-        
-        <br/>
-        <br/>
-        <input name="mascara" value="mascara" id="mascara" type="checkbox" />
-        <label for="mascara">Mask</label><br /><br />
-        <input
-          name="button"
-          id="gerar"
-          value="Create"
-          onclick="gera()"
-          type="button"
-        />
-      </form>
+        <form name="form_main">
+
+            <div class="row d-flex-flex-inline">
+                <h4>Type:</h4>
+                <div class="input-item">
+                    <label for="cpf">CPF</label>
+                    <input name="tipo" value="cpf" id="cpf" checked="checked" type="radio" />
+                </div>
+
+                <div class="input-item">
+                    <label for="cnpj">CNPJ</label>
+                    <input name="tipo" value="cnpj" id="cnpj" type="radio" />
+                </div>
+
+                <div class="input-item">
+                    <label for="mascara">Mask</label>
+                    <input name="mascara" value="mascara" id="mascara" type="checkbox" checked />
+                </div>
+
+                <div class="input-item">
+                    <button name="button" id="gerar" onclick="generateAndCopy()" type="button">
+                        Generate and copy
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="input-item">
+                    <label for="numero">Number:</label>
+                    <input name="numero" id="numero" size="20" type="text" />
+                    <button type="button" action-type="copy">Copy</button>
+                </div>
+
+                <div class="input-item feedback-container">
+                    <span item-type="feedback"></span>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="sidebar.js"></script>
-  </body>
+</body>
+
 </html>
