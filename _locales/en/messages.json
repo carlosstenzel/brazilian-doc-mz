@@ -1,8 +1,9 @@
 {
-
-    "menuItemOpenSidebar": {
-      "message": "Open sidebar",
-      "description": "Title of context menu item that opens a sidebar."
-    }
-  
+  "menuItemOpenSidebar": {
+    "message": "Open sidebar",
+    "description": "Title of context menu item that opens a sidebar."
+  },
+  "SuccessfullyCopied": {
+    "message": "Successfully copied!"
   }
+}

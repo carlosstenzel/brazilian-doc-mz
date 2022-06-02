@@ -1,10 +1,9 @@
 {
-
   "manifest_version": 2,
-  "name": "Brazilian Document - Test ",
-  "version": "1.0",
+  "name": "Brazilian Document - for test ",
+  "version": "1.1",
   "default_locale": "en",
-  "description": "Gera um CPF/CNPJ aleatório para utlizar em teste",
+  "description": "Generates a fake CPF/CNPJ to use in testing.",
   "browser_specific_settings": {
     "gecko": {
       "strict_min_version": "56.0a1"
@@ -15,22 +14,13 @@
   },
 
   "background": {
-    "scripts": [
-        "brazilianDoc.js"
-    ]
+    "scripts": ["brazilianDoc.js"]
   },
 
-  "permissions": [
-    "activeTab",
-    "contextMenus",
-    "menus",
-    "clipboardWrite"
-  ],
+  "permissions": ["activeTab", "contextMenus", "menus", "clipboardWrite"],
   "sidebar_action": {
     "default_icon": "icons/brazilian-doc-80.png",
-    "default_title" : "Brazilian Document - Test",
+    "default_title": "Brazilian Document - for test ",
     "default_panel": "sidebar/sidebar.html"
   }
-
-
 }

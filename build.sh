@@ -18,4 +18,5 @@ fi
 
 zip -r -FS "${ZIP_FILE}" * \
     --exclude '*.git*' \
-    --exclude '*build**'
+    --exclude '*build**' \
+    --exclude '*.DS_Store*'
