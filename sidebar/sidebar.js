@@ -11,6 +11,8 @@ function sendFeedback() {
     return;
   }
 
+  feedbackItem.innerHTML = "";
+
   feedbackItem.appendChild(document.createTextNode(browser.i18n.getMessage("SuccessfullyCopied"))),
     feedbackItem.classList.add("active");
 

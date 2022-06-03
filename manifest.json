@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Brazilian Document - for test ",
-  "version": "1.1",
+  "version": "1.2",
   "default_locale": "en",
   "description": "Generates a fake CPF/CNPJ to use in testing.",
   "browser_specific_settings": {
